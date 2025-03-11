@@ -52,6 +52,9 @@ const LoginScreen = (props) => {
               onChangeText={setInputMobile}
               value={inputMobile}
               inputType='numeric'
+              onFocus={() => console.log("Input focused")}  // ✅ Add this
+              onBlur={() => console.log("Input blurred")}   // ✅ Add this
+              onEndEditing={() => console.log("Input editing ended")}  // ✅ Add this
               keyboardType='numeric'
               maxLength={10}
               autoCompleteType="tel"
@@ -63,6 +66,9 @@ const LoginScreen = (props) => {
               placeholder={t("Password_Text")}
               onChangeText={setInputpassword}
               value={inputPassword}
+              onFocus={() => console.log("Input focused")}  // ✅ Add this
+              onBlur={() => console.log("Input blurred")}   // ✅ Add this
+              onEndEditing={() => console.log("Input editing ended")}  // ✅ Add this
               secureTextEntry={true}
               containerStyle={Authentications.PassWordStyle}
             />

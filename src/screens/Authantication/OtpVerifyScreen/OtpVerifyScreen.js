@@ -18,7 +18,7 @@ const OtpVerifyScreen = (props) => {
   const [resendModalVisible, setresendModalVisible] = useState(false);
   const onPressHandle = () => {
     setSuccessModalVisible(false)
-    navigation.navigate(RouteName.HOME_SCREEN)
+    navigation.navigate('Home')
   }
   const resendOTP = () => {
     setresendModalVisible(false)

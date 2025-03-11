@@ -36,7 +36,6 @@ function CheckBoxset(props) {
         autoPlay={true}
         loop
         source={source}
-        progress={animationProgress.current}
       />
     </View>
   );

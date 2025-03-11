@@ -2,7 +2,7 @@ import React from 'react';
 import { View, } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HomeTab, MydiaryTab, Profile, TrainingTab, } from '../screens';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator, DrawerContentScrollView } from '@react-navigation/drawer';
 import { Style } from '../styles';
 import { ColorPicker, CustomSidebarMenu, VectoreIcons, HeaderLeftMenuIcon, AppHeader } from '../components';
@@ -11,7 +11,7 @@ import { Colors, SH, SF } from '../utils';
 import { useTranslation } from "react-i18next";
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
 const headerArray = {
